@@ -124,6 +124,8 @@ class _CredentialsState extends State<Credentials> {
               } else {
                 _showMyDialog();
               }
+              userController.text = '';
+              passwordController.text = '';
             },
           ),
         ),
@@ -132,7 +134,9 @@ class _CredentialsState extends State<Credentials> {
           child: Text(
             "¿Tienes preguntas?",
             style: TextStyle(
-                fontSize: 16, color: Color(0xFF344257), fontWeight: FontWeight.w600),
+                fontSize: 16,
+                color: Color(0xFF344257),
+                fontWeight: FontWeight.w600),
           ),
         ),
         GestureDetector(
@@ -159,7 +163,6 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
         resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
           child: Container(
