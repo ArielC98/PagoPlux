@@ -108,15 +108,15 @@ class _CredentialsState extends State<Credentials> {
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(40))),
               backgroundColor: const Color(0xFF35DCA4),
-              foregroundColor: Color(0xFF344257),
+              foregroundColor: const Color(0xFF344257),
             ),
             child: const Text(
               'Ingresar',
               style: TextStyle(fontSize: 18),
             ),
             onPressed: () {
-              if (userController.text == 'Pagoplux' &&
-                  passwordController.text == 'Pagoplux') {
+              if (userController.text == '' &&
+                  passwordController.text == '') {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: ((BuildContext context) {
                   return const FormScreen();
