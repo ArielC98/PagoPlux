@@ -71,10 +71,33 @@ class _PaymentFormState extends State<PaymentForm> {
               keyboardType: TextInputType.number,
               maxLength: 10,
             ),
-
+            Padding(
+              padding: const EdgeInsets.only(top:20.0),
+              child: SizedBox(
+                width: 330,
+                height: 50,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(40))),
+                    backgroundColor: const Color(0xFF35DCA4),
+                    foregroundColor: const Color(0xFF344257),
+                  ),
+                  child: const Text(
+                    'Envíar',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                  onPressed: () {
+                    
+                  },
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+

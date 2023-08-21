@@ -115,8 +115,8 @@ class _CredentialsState extends State<Credentials> {
               style: TextStyle(fontSize: 18),
             ),
             onPressed: () {
-              if (userController.text == '' &&
-                  passwordController.text == '') {
+              if (userController.text == 'Pagoplux' &&
+                  passwordController.text == 'Pagoplux') {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: ((BuildContext context) {
                   return const FormScreen();
